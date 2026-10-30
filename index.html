@@ -45,6 +45,10 @@
   --screen-tap: rgba(28, 49, 71, 0.22);
   --screen-notif: rgba(255, 255, 255, 0.94);
   --screen-notif-shadow: rgba(28, 49, 71, 0.35);
+  --terra: #B0532F;
+  --terra-text: #9A4426;
+  --terra-soft: #F7E6DD;
+  --screen-terra: #B0532F;
   --font-display: "Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", serif;
   --font-body: "Jost", "Avenir Next", "Segoe UI", Arial, sans-serif;
   --step--1: 0.9rem;
@@ -73,6 +77,9 @@
     --plate-line: #B7CDE3;
     --shadow: rgba(0, 0, 0, 0.5);
     --phone-frame: #31455E;
+    --terra: #EE9A76;
+    --terra-text: #EE9A76;
+    --terra-soft: #3A2620;
     color-scheme: dark;
   }
 }
@@ -95,6 +102,9 @@
   --plate-line: #B7CDE3;
   --shadow: rgba(0, 0, 0, 0.5);
   --phone-frame: #31455E;
+  --terra: #EE9A76;
+  --terra-text: #EE9A76;
+  --terra-soft: #3A2620;
   color-scheme: dark;
 }
 
@@ -815,6 +825,15 @@ h3 {
   .site-scroll, .ms-slot.pick, .ms-slot.pick::after, .ms-confirm, .ms-confirm::after, .ms-confirm > span, .ms-notif { animation: none; }
   .ms-notif { opacity: 1; transform: none; }
 }
+
+/* Touches de terracotta */
+.hero h1 em { color: var(--terra); }
+.eyebrow { color: var(--terra-text); }
+.launch { background: var(--terra-soft); border-bottom-color: var(--terra-soft); }
+.launch strong, .launch a { color: var(--terra-text); }
+.why-item h3::before { background: var(--terra); box-shadow: 0 0 0 4px var(--terra-soft); }
+.pay { color: var(--terra-text); border-color: var(--terra-text); }
+.ms-notif-icon { background: var(--screen-terra); }
 </style>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
